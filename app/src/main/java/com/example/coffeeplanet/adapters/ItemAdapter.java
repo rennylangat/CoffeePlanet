@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
@@ -63,6 +64,14 @@ public class ItemAdapter extends PagerAdapter {
         itemSubTitle.setText(coffeeList.get(position).getmSubtitle());
         itemDesc.setText(coffeeList.get(position).getDescription());
 
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context,""+coffeeList,Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        container.addView(view);
 
         return view;
     }

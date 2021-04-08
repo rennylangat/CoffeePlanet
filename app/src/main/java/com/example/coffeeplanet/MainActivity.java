@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         initData();
 
         ItemAdapter adapter=new ItemAdapter(this,list);
+        viewPager.setAdapter(adapter);
 
         tvLogo.setOnClickListener(new View.OnClickListener() {
             @Override
