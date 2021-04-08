@@ -20,7 +20,6 @@
         android:id="@+id/view_pager"
         android:layout_marginTop="20dp"
         android:visibility="invisible"
-        app:icvp_interpolator="android:anim/accelerate_decelerate_interpolator"
         app:icvp_scroll_duration="250"
         app:icvp_min_page_scale_offset="5dp"
         app:icvp_center_page_scale_offset="10dp"
