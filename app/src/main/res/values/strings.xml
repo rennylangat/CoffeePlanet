@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CoffeePlanet</string>
+    <string name="item_desc">Dummy Content Description</string>
 </resources>
