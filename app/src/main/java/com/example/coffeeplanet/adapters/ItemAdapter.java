@@ -20,6 +20,7 @@ import java.util.List;
 public class ItemAdapter extends PagerAdapter {
     private Context context;
     private List<Coffee> coffeeList;
+    private View view;
 
     public ItemAdapter(Context context, List<Coffee> coffeeList) {
         this.context = context;
@@ -31,14 +32,16 @@ public class ItemAdapter extends PagerAdapter {
         return coffeeList.size();
     }
 
+
     @Override
     public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
-        super.destroyItem(container, position, object);
+        //In essence you should replace the new view group
+        //super.destroyItem(container, position, object);
     }
 
     @Override
     public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
-        return view.equals(0);
+        return view.equals(object);
     }
 
     @Override
