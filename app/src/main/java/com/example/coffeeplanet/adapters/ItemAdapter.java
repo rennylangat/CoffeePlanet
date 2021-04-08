@@ -35,7 +35,7 @@ public class ItemAdapter extends PagerAdapter {
 
     @Override
     public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
-        //In essence you should replace the new view group
+        //In essence you should replace the new view group but since we need the repeat effect....
         //super.destroyItem(container, position, object);
     }
 
